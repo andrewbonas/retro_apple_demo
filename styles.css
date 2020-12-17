@@ -1,11 +1,28 @@
 
+body{
+  min-width:1000px;        
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url("assets/your_verse_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 95%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 64vh;
+  margin: 0 auto;
+ 
+}
 
 .nav-items {
-  max-width: 60%;
+  max-width: 900px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   list-style: none;
-  border: 1px solid black;
+  border: 1px solid rgb(112, 106, 106);
   border-radius: 5px;
   background-color: grey;
   background-image: linear-gradient(
@@ -44,8 +61,63 @@
   box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.75), inset -1px -1px 1px 0px rgba(255,255,255,0.75);
 }
 
-a:hover {
-  background-image: radial-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.3));
+.title {
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title a {
+color: white;
 }
 
 
+a.nav-item:hover {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.3));
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 2px;
+  margin-left: 2px;
+  gap: 2px;
+  width: 100%
+}
+img {
+  max-width: 354px;
+  width: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(82, 78, 78);
+}
+
+.link {
+  border-right: 1px solid grey;
+  padding-right: 8px;
+  margin: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.flag {
+  border: none;
+}
